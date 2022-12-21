@@ -2,7 +2,7 @@ const ethers = require("ethers");
 const fs = require('fs');
 async function main() {
     // HTTP://127.0.0.1:7545
-    const provider = new ethers.providers.JsonRpcProvider("HTTP://127.0.0.1:7545")
+    const provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alchemy.com/v2/aLDI_TRRwsBE8Gz0fxARZ23PoAc1lLw5")
     const wallet = new ethers.Wallet("471fb80f0a9422caa3cea6f1d253c252632ed8c87bb33353d8a4229dfd300623", provider)
 
     const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf-8");
